@@ -9,23 +9,23 @@
  * @package BePure
  * 
  */
-if (!isset($_SESSION['user'])) {
-    if ($_REQUEST['username']) {
+if (isset($_REQUEST['sbt_btn'])) {
 
-        $user_name = _escape($_REQUEST['username']);
+        $email = _escape($_REQUEST['email']);
         $password = _escape($_REQUEST['password']);
-        if (User::doLogin($user_name, $password)) {
-            User::initUserSession($user_name);
-            //_R(lr('home'));
-            _R(lr('infusionsoft_order'));
+
+        $data = q("select email,password from registration where email = '$email'  AND password = '$password' ");
+
+        if ($data != null) {
+            
+            _R('task');
+            
         } else {
-            $error = "Invalid Credentials";
+
+            $error = "Username Or Password is Wrong!!!";
         }
-        $jsInclude = "login.js.php";
-    }
-    $no_visible_elements = true;
-} else {
-    _R(lr('infusionsoft_order'));
+    
 }
-_cg("page_title", "Login");
+
+
 ?>
