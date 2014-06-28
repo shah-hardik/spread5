@@ -4,7 +4,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <title> BePure Admin | <?php print _cg("page_title"); ?></title>
+        <title> Task Management | <?php print _cg("page_title"); ?></title>
         <link rel="shortcut icon" href="<?php print _MEDIA_URL ?>img/favicon.ico" />
         <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 
