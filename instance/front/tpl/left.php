@@ -17,7 +17,7 @@
             <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Friends<b class="caret"></b></a>
                 <ul class="dropdown-menu">
-                    <li><a href="<?php l('friendRequest') ?>">FriendRequest</a></li>
+                    <li><a href="<?php l('list_user') ?>">Find Friend</a></li>
       <!--              <li><a href="<?php l('fastway_keys') ?>">Fastway Courier API Keys</a></li>-->
                 </ul>
             </li>
