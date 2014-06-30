@@ -9,8 +9,15 @@
  * @package BePure
  * 
  */
+$urlArgs = _cg("url_vars");
+session_start();
+
+ $_SESSION['user'] = $_REQUEST['email'];
+ 
+ 
 if (isset($_REQUEST['sbt_btn'])) {
 
+    
         $email = _escape($_REQUEST['email']);
         $password = _escape($_REQUEST['password']);
 
@@ -24,7 +31,7 @@ if (isset($_REQUEST['sbt_btn'])) {
 
             $error = "Username Or Password is Wrong!!!";
         }
-    
+   
 }
 
 

@@ -1,6 +1,7 @@
 
 <nav class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
     <div class="navbar-header">
+        
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
@@ -22,10 +23,12 @@
                 </ul>
             </li>
         </ul>
+       
         <?php $admin = ($_SESSION['user']['user_name']); ?>
+      
         <ul class="nav navbar-nav navbar-right">
             <li class="dropdown hidden-xs">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php if ($admin != ''): ?>Admin<?php endif; ?>&nbsp;<i class="fa fa-user" >&nbsp;</i><b class="caret"></b></a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php if ($admin != ''): ?>User<?php endif; ?>&nbsp;<i class="fa fa-user" >&nbsp;</i><b class="caret"></b></a>
                 <ul class="dropdown-menu">
                     <li><a href="<?php print _U ?>?logout=1"><i class="glyphicon glyphicon-off"></i> Logout</a></li>
                 </ul>

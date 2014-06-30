@@ -1,7 +1,6 @@
 <?php
 $urlArgs = _cg("url_vars");
 
-
 $begindate = date('Y-m-d', strtotime($_REQUEST['fields']['to_date']));
 $enddate = date('Y-m-d', strtotime($_REQUEST['fields']['from_date']));
 
