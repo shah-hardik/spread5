@@ -13,10 +13,12 @@
         <td><?php print $user_data['phone']; ?></td>
         <td><?php print $user_data['email']; ?></td>
         <td>
-            <a href="<?php print _U ?>edit_user/<?php print $user_data['id']; ?>"><i class="glyphicon glyphicon-edit" title="Edit"></i></a>
 
             <a href="javascript:void(0);" onclick="return DeleteUser('list_user/<?php print $user_data['id']; ?>')"><i class="glyphicon glyphicon-trash" title="Delete"></i></a>
 
+        </td>
+        <td> <a href="<?php print _U;
+    ?>friendrequest/<?php print $user_data['id']; ?>" style="text-decoration: none;"><span class="label label-info" title="Send Friend Request" data-toggle="tooltip" >FriendRequest</span></a>
         </td>
     </tr>
     <?php $cr++; ?>    

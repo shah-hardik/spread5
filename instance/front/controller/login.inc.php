@@ -25,7 +25,7 @@ if (isset($_REQUEST['sbt_btn'])) {
 
         if ($data != null) {
             
-            _R('task');
+            _R('view_request');
             
         } else {
 

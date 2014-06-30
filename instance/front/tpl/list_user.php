@@ -1,8 +1,4 @@
 
-<div class="listAffiliates actionItem">
-
-</div>
-
 
 <div class="listAffiliates actionItem">
     <div  class="col-md-12">

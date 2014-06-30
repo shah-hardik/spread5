@@ -1,4 +1,4 @@
 <?php
 
-echo "Find Friend";
+echo "Request Sent";
 ?>
