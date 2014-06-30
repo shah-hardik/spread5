@@ -15,7 +15,7 @@
           <script src="<?php print _MEDIA_URL ?>js/html5shiv.js"></script>
         <![endif]-->
 
-        
+
         <link href="<?php print _MEDIA_URL ?>css/style.css" rel="stylesheet" type="text/css" />
 
         <style type="text/css">
@@ -48,10 +48,19 @@
 
     </head>
     <body>
+
         <div class="">
-            <?php if ($no_visible_elements) : ?>
+
+            <?php $admin = ($_SESSION['user']['user_name']); ?>
+            <?php if ($admin == ''): ?>
+
+
+                <?php ($no_visible_elements) ?>
                 <?php include $modulePage; ?>
+
             <?php else: ?>
+
+
                 <?php include_once('left.php'); ?>
                 <div class=" col-md-12" >
                     <?php include "breadcrumb.php"; ?>
@@ -59,11 +68,11 @@
                         <?php if (!(@include $modulePage)) : ?>
                             <?php include "404.php"; ?>
                         <?php endif; ?>
-                    </div>
-                </div>	
-            <?php endif; ?>
-        </div>
+                    <?php endif; ?>        
+                </div>
+            </div>	
 
+        </div>
         <script src="//code.jquery.com/jquery.js"></script>
 
         <?php include "scripts.php"; ?>
