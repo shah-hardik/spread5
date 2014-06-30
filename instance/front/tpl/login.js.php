@@ -7,5 +7,8 @@
             $("#loginGears").removeClass("fa-spin");
         });
     })
-    
+   function DeleteUser(url){
+        delUrl = url;
+        $("#myModal").modal("show");
+    } 
 </script>
