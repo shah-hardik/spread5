@@ -16,10 +16,10 @@
             <li><a href="<?php l('task') ?>">Task </a></li>
 <!--            <li><a href="<?php l('fastway_couriers') ?>">Fastway Couriers</a></li>-->
             <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Settings<b class="caret"></b></a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Friends<b class="caret"></b></a>
                 <ul class="dropdown-menu">
-<!--                    <li><a href="<?php l('infusionsoft_keys') ?>">Infusionsoft API Keys</a></li>
-                    <li><a href="<?php l('fastway_keys') ?>">Fastway Courier API Keys</a></li>-->
+                    <li><a href="<?php l('friendRequest') ?>">FriendRequest</a></li>
+      <!--              <li><a href="<?php l('fastway_keys') ?>">Fastway Courier API Keys</a></li>-->
                 </ul>
             </li>
         </ul>
