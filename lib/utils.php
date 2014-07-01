@@ -204,7 +204,10 @@ function _auth_url($pages, $return_page) {
         _cg("url", $return_page);
     }
 }
-
+function getSenderIdFromEmail($email) {
+    $data = qs("select * from registration where email = '{$email}' ");
+    return $data;
+}
 function _level_auth_url($pages, $return_page) {
 
     if (!in_array(_cg("url"), $pages)) {
