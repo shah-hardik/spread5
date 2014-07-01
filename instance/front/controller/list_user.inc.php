@@ -1,5 +1,6 @@
 <?php
 $urlArgs = _cg("url_vars");
+$sender_id = getSenderIdFromEmail($_SESSION['user']);
 if ($_REQUEST['customFilter']) {
    
     $username = $_REQUEST['userName'];
@@ -11,17 +12,7 @@ if ($_REQUEST['customFilter']) {
 
     include _PATH . "instance/front/tpl/user_list_data.php";
 
-    if ($_REQUEST['Nextrecord']) {
-        $limit = $_REQUEST['Limit'];
-
-
-        $user = q("SELECT * FROM `registration` WHERE 
-            1=1  {$userCond} order by id DESC LIMIT {$limit},10 ");
-
-        include _PATH . "instance/front/tpl/user_list_data.php";
-
-        die;
-    }
+  
 
     die;
 }
@@ -29,7 +20,7 @@ if ($_REQUEST['customFilter']) {
 
 $user = q("select * from registration");
 
- $delet =qs("delete  from registration where id = '{$urlArgs[0]}' ");
+ $delet = qs("delete  from registration where id = '{$urlArgs[0]}' ");
 
 
 $jsInclude = "user.js.php";

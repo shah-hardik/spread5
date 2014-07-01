@@ -9,6 +9,7 @@
                 <div class="clearfix"></div>
             </div>
             <div class="panel-body">
+                <form>
                 <?php
                 $cr = 1;
                 if (!empty($request)):
@@ -28,7 +29,7 @@
                             <?php foreach ($request as $user_data): ?>
 
                                 <tr id="<?php print $user_data['id']; ?>">
-                                    <td></td>
+                                    <td><div style="background-color:#000;" class="hover col-xs-12 col-sm-6 col-md-4 col-lg-3 "></div></td>
                                     <td><?php print $cr; ?></td>
                                     <?php $senderdetail = qs("select * from registration where id = '{$user_data['sender_id']}'");
                                     ?>
@@ -37,8 +38,11 @@
                                     <strong><?php print $senderdetail['fname']; ?>  <?php print $senderdetail['lname']; ?></strong>
                                     </td>
                             
-                                    <td> <a href="" style="text-decoration: none;"><span class="btn btn-small btn-success" >Accept</span></a>&nbsp;
-				  <a href="" style="text-decoration: none;"><span class="btn btn-small btn-danger">Decline</span></a>
+                                    <td> <a href="<?php print _U;
+					?>my_friend/<?php print $user_data['id']; ?>" style="text-decoration: none;"><span class="btn btn-small btn-success" >Accept</span></a>&nbsp;
+				 <a href="<?php print _U;
+					?>view_request/<?php print $user_data['id']; ?>" style="text-decoration: none;"><span class="btn btn-small btn-danger" >Decline</span></a>&nbsp;
+				 
 				   </td>
                                 </tr>
                                 <?php $cr++; ?>    
@@ -49,6 +53,7 @@
                 <?php else: ?>
                     <div>No Request Found</div>
                 <?php endif; ?>
+                    </form>
             </div>
 
         </div>

@@ -208,6 +208,10 @@ function getSenderIdFromEmail($email) {
     $data = qs("select * from registration where email = '{$email}' ");
     return $data;
 }
+function checkStatus($senderid,$receiveid) {
+    $data = qs("select * from friend_request where sender_id = '{$senderid}' AND receiver_id = '{$receiveid}'");
+     return $data;
+}
 function _level_auth_url($pages, $return_page) {
 
     if (!in_array(_cg("url"), $pages)) {
