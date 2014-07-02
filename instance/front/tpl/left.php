@@ -22,6 +22,7 @@
       <!--              <li><a href="<?php l('fastway_keys') ?>">Fastway Courier API Keys</a></li>-->
                 </ul>
             </li>
+            <li><a href="<?php l('gallery') ?>">Gallery </a></li>
         </ul>
        
         <?php $admin = ($_SESSION['user']['user_name']); ?>
