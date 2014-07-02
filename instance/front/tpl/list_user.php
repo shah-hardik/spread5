@@ -54,14 +54,15 @@
                                     <?php $status = checkStatus($sender_id['id'],$user_data['id']); ?>
                                     <td> <a href="<?php print _U;
 					?>friendrequest/<?php print $user_data['id']; ?>" style="text-decoration: none;">
-                                            <?php if($status['status'] == 0):?>
-                                            <span class="label label-info" title="Send Friend Request" data-toggle="tooltip" >Send FriendRequest</span>
-                                        <?php elseif($status['status'] == 1):?>
+                                            <?php if($status['status'] == 'Pending'):?>
+                                            <span class="label label-warning" title="Pending Request" data-toggle="tooltip" >Sent</span> 
+                                          
+                                             <?php elseif($status['status'] == 1):?>
                                                <span class="label label-success" title="Friend Request Accepted" data-toggle="tooltip" >Friends</span> 
                                             
                                         <?php else:?>
-                                               <span class="label label-warning" title="Pending Request" data-toggle="tooltip" >Sent</span> 
-                                            
+                                                 <span class="label label-info" title="Send Friend Request" data-toggle="tooltip" >Send FriendRequest</span>
+                                       
                                          <?php endif;?>
                                         
                                         </a>
