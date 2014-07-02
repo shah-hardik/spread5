@@ -22,6 +22,14 @@
       <!--              <li><a href="<?php l('fastway_keys') ?>">Fastway Courier API Keys</a></li>-->
                 </ul>
             </li>
+            <li><a href="<?php l('gallery') ?>">Gallery </a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Spread5-CRM<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                    <li><a href="<?php l('add_customer') ?>">Add Customer</a></li>
+      
+                </ul>
+            </li>
              <li><a href="<?php l('userCheckIn') ?>">User Time Logs </a></li>
         </ul>
        
