@@ -18,9 +18,9 @@
 
 
         <div class="form-group">
-
+            <label for="inputgroup" class="col-lg-3 control-label">User Name</label>
             <div class="col-lg-6 input-group">
-                <label for="inputgroup" class="col-lg-3 control-label">User Name</label>
+
                 <input type="text" class="form-control input-sm" id="username" name="username" placeholder="User Name" >
 
             </div>
@@ -33,7 +33,7 @@
                 <span  id="span_to" name="span_to" onclick="$('#checkindate').datepicker('show');"  class="input-group-addon pointer"><i class="glyphicon glyphicon-calendar"></i></span>
             </div>
         </div>
-        
+
         <div class="form-group">
             <label for="inputgroup" class="col-lg-3 control-label">Check In Time</label>
             <div class="col-lg-6 input-group">
@@ -43,18 +43,18 @@
         </div>
 
         <div class="form-group">
-            <div class="col-lg-9">
+            <div class="col-lg-6">
                 <textarea type="text" class="form-control input-sm"  id="notes" name="notes" placeholder="Notes" >
                 </textarea>
             </div>
         </div>
-        
+
         <div class="form-group">
             <div class=" col-lg-9">
                 <button type="button" onclick="doLoadFilter();"  class="btn btn-success input-sm">Save</button>
             </div>
         </div>
-        
+
     </form>
 </div>
 </div>
