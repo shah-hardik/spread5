@@ -39,9 +39,15 @@
                                 <tr id="<?php print $user_data['id']; ?>">
                                     <td></td>
                                     <td><?php print $cr; ?></td>
-                                    <td><?php print $user_data['username']; ?></td>
-                                    <td><?php print $user_data['fname']; ?></td>
-                                    <td><?php print $user_data['lname']; ?></td>
+                                    <td><a href="<?php print _U;
+					?>friend_profile/<?php print $user_data['id']; ?>" style="text-decoration: none;"><?php print $user_data['username']; ?></a>&nbsp;
+				    </td>
+                                    <td><a href="<?php print _U;
+					?>friend_profile/<?php print $user_data['id']; ?>" style="text-decoration: none;"><?php print $user_data['fname']; ?></a>&nbsp;
+				    </td>
+                                    <td><a href="<?php print _U;
+					?>friend_profile/<?php print $user_data['id']; ?>" style="text-decoration: none;"><?php print $user_data['lname']; ?></a>&nbsp;
+				    </td>
                                     <td><?php print $user_data['address']; ?></td>
                                     <td><?php print $user_data['city']; ?></td>
                                     <td><?php print $user_data['phone']; ?></td>
