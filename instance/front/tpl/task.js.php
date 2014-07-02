@@ -1,5 +1,4 @@
 
-
 <script type="text/javascript">
     var delUrl = '';
     function Deletetask(url){
@@ -28,22 +27,6 @@
 
             }
         });
-        $("#checkindate").datepicker({
-            changeMonth: true,
-            changeYear: true,
-            onSelect: function(e) {
-                searchParams.date = e;
-
-            }
-        });
-         $( "#checkintime" ).timepicker({ 
-                  changeYear: true, 
-                  changeMonth: true,
-                  dateFormat: 'hh:mm:ss',
-                  onSelect: function(e) {
-                searchParams.date = e;
-                  }
-              });
         
        
    
