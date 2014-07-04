@@ -27,7 +27,8 @@
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Spread5-CRM<b class="caret"></b></a>
                 <ul class="dropdown-menu">
                     <li><a href="<?php l('add_customer') ?>">Add Customer</a></li>
-      
+                    <li><a href="<?php l('appointment') ?>">Appointment</a></li>
+                    <li><a href="<?php l('appointment_list') ?>">Appointment List</a></li>
                 </ul>
             </li>
              <li><a href="<?php l('userCheckIn') ?>">User Time Logs </a></li>
