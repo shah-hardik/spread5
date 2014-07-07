@@ -14,16 +14,7 @@ if (isset($_REQUEST['sbt_btn'])) {
         'date' => _escape($date),
         'notes' => _escape($_REQUEST['notes']),
             ), 'REPLACE');
-
- 
 }
-//$us = $_REQUEST['user'];
-
-//$check = qs("select username from registration where username = '{$us}'");
-
-
-//$d = qs("select user from user_checkin_detail where user = '{$us}'");
-
 
 
 

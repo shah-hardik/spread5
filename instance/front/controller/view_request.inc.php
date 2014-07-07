@@ -1,5 +1,7 @@
 <?php
 $urlArgs = _cg("url_vars");
+
+
 $declineId = $urlArgs[0];
 if(isset($declineId) != '')
 {

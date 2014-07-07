@@ -34,15 +34,16 @@
              <li><a href="<?php l('userCheckIn') ?>">User Time Logs </a></li>
         </ul>
        
-        <?php $admin = ($_SESSION['user']['user_name']); ?>
+        <?php $admin =($_SESSION['user']); ?>
       
         <ul class="nav navbar-nav navbar-right">
             <li class="dropdown hidden-xs">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php if ($admin != ''): ?>User<?php endif; ?>&nbsp;<i class="fa fa-user" >&nbsp;</i><b class="caret"></b></a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php if ($admin != ''): ?><?php print $admin['username'] ?><?php endif; ?>&nbsp;<i class="fa fa-user" >&nbsp;</i><b class="caret"></b></a>
                 <ul class="dropdown-menu">
-                    <li><a href="<?php print _U ?>?logout=1"><i class="glyphicon glyphicon-off"></i> Logout</a></li>
+                  
                 </ul>
             </li>
+              <li><a href="<?php print _U ?>?logout=1"><i class="glyphicon glyphicon-off"></i> Logout</a></li>
         </ul>
     </div><!-- /.navbar-collapse -->
 </nav>

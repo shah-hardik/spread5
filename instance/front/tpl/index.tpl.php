@@ -50,9 +50,12 @@
     <body>
 
         <div class="">
-
-            <?php $admin = ($_SESSION['user']['user_name']); ?>
-            <?php if ($admin == ''): ?>
+            
+ <?php $admin = ($_SESSION['user']);?>
+           
+<?php  if(empty($_SESSION['user'])): ?>
+          
+            
 
 
                 <?php ($no_visible_elements) ?>
